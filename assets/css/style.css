@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Possum Saltare NF';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Possum Saltare NF'), local('PossumSaltareNF-Regular'),
+       url('../fonts/PossumSaltareNF.otf'), 
+       url('../fonts/PossumSaltareNF.ttf'); 
+}
+@font-face {
+  font-family: 'SPQR';
+  font-weight: 400;
+  font-style: normal;
+  src: local('SPQR Regular'), local('SPQR-regular'),
+       url('../fonts/spqr.ttf');
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+#gameBoard {
+	width: 100%;
+	height: 100%;
+	background: url("../images/arena.jpg") center/cover no-repeat fixed;
+}
+
+#gameTitle {
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	font-family: SPQR, serif;
+	font-size: 112px;
+}
+
+#characterPicRow {
+	vertical-align: bottom;
+}
+
+#playerBase {
+	position: fixed;
+	bottom: 40%;
+}
+
+#playerAttack {
+	position: fixed;
+	left: 40%;
+	bottom: 15%;
+}
+
+#enemyBase {
+	position: fixed;
+	right: 0;
+	bottom: 5%;
+}
+
+#enemyDefend {
+	position: fixed;
+	right: 40%;
+	bottom: 15%;
+}
+
+#btnAttack {
+	position: fixed;
+	left: 45%;
+	bottom: 5%;
+	font-size: 42px;
+	visibility: hidden;
+}
+
+#msgPane {
+	min-width: 500px;
+	max-width: 600px;
+	min-height: 400px;
+	padding: 15px;
+	position: fixed;
+	left: 25%;
+	top: 25%;
+	background-color: khaki;
+	font-family: 'Possum Saltare NF';
+	font-size: 32px;
+	visibility: hidden;
+}
+
+#btnMessage {
+	position: absolute;
+	left: 45%;
+	bottom: 5%;
+	font-family: 'Possum Saltare NF';
+	font-size: 16px;
+	visibility: inherit;
+}
+
+.characterPic {
+	width: 120px;
+	height: 120px;
+	padding: 10px;
+}
+
+.imgGladiator {
+	width: 120px;
+	height: 120px;
+	padding-bottom: 56px;
+	/*
+	float: left;
+	*/
+	background-color: gray;
+	z-index: -100;
+}
+
+.nameGladiator {
+	width: 120px;
+	float: left;
+	position: absolute;
+	top: 132px;
+	text-align: center;
+	font-family: Arial, "sans serif";
+	font-size: 16px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.healthGladiator {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 148px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.attackGladiator {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 160px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.defendGladiator {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 172px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.imgPlayer {
+	width: 120px;
+	height: 120px;
+	padding-bottom: 56px;
+	/*
+	float: left;
+	*/
+	background-color: gray;
+	z-index: -100;
+}
+
+.namePlayer {
+	width: 120px;
+	float: left;
+	position: absolute;
+	top: 132px;
+	text-align: center;
+	font-family: Arial, "sans serif";
+	font-size: 16px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.healthPlayer {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 148px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.attackPlayer {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 160px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
+
+.defendPlayer {
+	width: 120px;
+	padding-left: 16px;
+	float: left;
+	position: absolute;
+	top: 172px;
+	font-family: Arial, "sans serif";
+	font-size: 12px;
+	/*
+	z-index: 100;
+	*/
+}
